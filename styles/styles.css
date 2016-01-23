@@ -1,0 +1,230 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.7s;
+    -moz-animation-duration:0.7s;
+    animation-duration:0.7s;
+}
+
+.fade-in.slow {
+/*	-webkit-animation-duration:.2s;
+    -moz-animation-duration:.2s;*/
+    animation-delay:.25s;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 34px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+li {
+	display: inline;
+	margin: 0 25px 0 25px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.black:hover {
+	color: black;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	color: black;
+	letter-spacing: 3px;
+	line-height: 100px;
+    text-transform: uppercase;
+}
+
+a img {
+	opacity: 1.0;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+.no-hover {
+	opacity: 1.0;
+}
+
+.hover:hover {
+	opacity: 0.7;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+#body_div {
+	top: 0;
+	position: relative;
+    height: 1500px;
+    background-color: green;
+    color: white;
+}
+
+#banner {
+	width: 100%;
+	height: 600px;
+	background-color: black;
+}
+
+#nav_bar {
+	background: #EBE9E3;
+	width: 100%;
+	padding-bottom: 30px;
+	opacity: .95;
+}
+
+.nav_links {
+	text-align: center;
+	padding: 0;
+}
+
+.nav_links li {
+	display: inline-block;
+    margin-top: 20px;
+}
+.nav_links li a {
+    font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	color: #bf9000;
+	font-weight: 400;
+	text-decoration: none;
+    text-transform: uppercase;
+	letter-spacing: 3px;
+	transition: all .2s ease-in-out;
+}
+
+.skip-fix {
+	height: 188px;
+}
+
+/*.href-skip {
+	height: 188px;
+}*/
+
+.logo-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.logo-image {
+	width: 394px;
+	height: 394px;
+	margin: 0 auto;
+	padding-top: 100px;	
+}
+
+.title-wrapper {
+	width: 100%;
+	height: 120px;
+	background: white;
+	opacity: .95;
+}
+
+.title {
+	text-align: center;
+	padding-top: 40px;
+	letter-spacing: 4px;
+}
+
+.products-wrapper {
+	overflow: hidden;
+	margin-left: 190px;
+	margin-top: 35px;
+}
+
+.image-wrapper {
+  	width: 265px;
+  	padding-bottom: 180px;
+  	color: white;
+  	position: relative;
+  	float: left;	
+}
+
+.image {
+  	position: absolute;
+  	left: 1px;
+  	right: 1px;
+  	top: 1px;
+  	bottom: 1px;
+  	background: white;
+  	/*margin: 20px;*/
+}
+
+#products { 
+	margin-bottom: 10px;
+	font-family: 'Raleway';
+	color: black;
+	top: 188px;
+}
+
+.p-wrapper {
+	margin: 40px;
+}
+
+#p-link {
+	padding-top: 188px;
+	margin-top: -188px;
+}
+
+.active {
+	font-weight: bold;
+	color: black;
+}
+
+@media screen and (min-width: 480px) {
+	.global-header header {
+		max-width: 510px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.global-header header {
+		max-width: 800px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.global-header header {
+		max-width: 1020px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.global-header header {
+		max-width: 1230px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.global-header header {
+		max-width: 1430px;
+	}
+}
+
